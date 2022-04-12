@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FootballAPI</string>
+    <string name="home">HOME</string>
+
+    <string name="PL">null</string>
+    <string name="startDate">Start Date: </string>
+    <string name="endDate">End Date: </string>
+    <string name="matchday">Matchday: </string>
+    <string name="matchdayNumber">28</string>
+
+    <string name="sDate">2021-08-13</string>
+    <string name="eDate">2022-05-22</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
