@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun plClick() {
         binding.cvPL.setOnClickListener {
-            val intent = Intent(this, PLHome::class.java)
+            val intent = Intent(this@MainActivity, PLHome::class.java)
             startActivity(intent)
         }
     }

@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MWMFootball">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="false" />
         <activity
             android:name=".PLHome"
