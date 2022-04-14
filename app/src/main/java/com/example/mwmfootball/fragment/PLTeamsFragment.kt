@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mwmfootball.adapter.PLTeamsRecyclerAdapter
+import com.example.mwmfootball.adapter.PL.PLTeamsRecyclerAdapter
 import com.example.mwmfootball.databinding.FragmentPLTeamsBinding
 import com.example.mwmfootball.model.Teams.PLTeamsModel
 import com.example.mwmfootball.model.Teams.Team

@@ -1,4 +1,4 @@
-package com.example.mwmfootball.adapter
+package com.example.mwmfootball.adapter.PL
 
 import android.view.LayoutInflater
 import android.view.View
@@ -28,7 +28,7 @@ class PLChartRecyclerAdapter : RecyclerView.Adapter<PLChartRecyclerAdapter.MyVie
                 tvNameTeam.text = plChartData.team.name
                 tvP.text = plChartData.points.toString()
                 tvW.text = plChartData.won.toString()
-                tvPosition.text = plChartData.points.toString()
+                tvPosition.text = plChartData.position.toString()
 
                 Glide.with(civTeamIcon)
                     .load(plChartData.team.crestUrl)

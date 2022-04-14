@@ -1,8 +1,9 @@
-package com.example.mwmfootball
+package com.example.mwmfootball.activity.PL
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mwmfootball.adapter.PLViewPagerAdapter
+import com.example.mwmfootball.R
+import com.example.mwmfootball.adapter.PL.PLViewPagerAdapter
 import com.example.mwmfootball.databinding.ActivityPlhomeBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

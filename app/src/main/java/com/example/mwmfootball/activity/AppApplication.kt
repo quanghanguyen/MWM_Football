@@ -1,4 +1,4 @@
-package com.example.mwmfootball
+package com.example.mwmfootball.activity
 
 import android.app.Application
 

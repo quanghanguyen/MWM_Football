@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".AppApplication"
+        android:name=".activity.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MWMFootball">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".PLHome"
+            android:name=".activity.PLHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,16 +1,17 @@
-package com.example.mwmfootball
+package com.example.mwmfootball.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import com.example.mwmfootball.R
 import com.example.mwmfootball.databinding.ActivityMainBinding
 import com.example.mwmfootball.model.PLHomeData
+import com.example.mwmfootball.retrofit.PL.PLHome
 import com.example.mwmfootball.viewmodel.PLHomeViewModel
 
 // OnClick trên Cardview thì lỗi crash
-// Vẫn chưa thể load ảnh trên RecyclerView trong Teams Fragment
 
 lateinit var binding : ActivityMainBinding
 

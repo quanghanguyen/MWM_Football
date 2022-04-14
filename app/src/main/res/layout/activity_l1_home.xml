@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.PLHome">
+    tools:context=".activity.L1.L1Home">
+
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tlPL"
+        android:id="@+id/tlL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/vpPL"
-        android:layout_below="@+id/tlPL"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tlL1"/>
+
 </RelativeLayout>

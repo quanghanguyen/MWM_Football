@@ -1,4 +1,4 @@
-package com.example.mwmfootball.adapter
+package com.example.mwmfootball.adapter.PL
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

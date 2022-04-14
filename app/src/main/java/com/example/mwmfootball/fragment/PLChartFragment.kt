@@ -9,11 +9,9 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mwmfootball.R
-import com.example.mwmfootball.adapter.PLChartRecyclerAdapter
+import com.example.mwmfootball.adapter.PL.PLChartRecyclerAdapter
 import com.example.mwmfootball.databinding.FragmentPLChartBinding
 import com.example.mwmfootball.model.Chart.PLChartModel
-import com.example.mwmfootball.model.Chart.Standing
 import com.example.mwmfootball.model.Chart.Table
 import com.example.mwmfootball.viewmodel.PLChartViewModel
 
@@ -34,7 +32,8 @@ class PLChartFragment : Fragment() {
         val plChartViewModel : PLChartViewModel by viewModels()
         plChartViewModel.getListChartObserver().observe(this, Observer<PLChartModel?>{
             if (it != null) {
-                plChartRecyclerAdapter.getlstChart(it.standings as ArrayList<Table>)
+                val chartInfo = it.standings
+                plChartRecyclerAdapter.getlstChart(chartInfo[0].table as ArrayList<Table>)
                 plChartRecyclerAdapter.notifyDataSetChanged()
             } else {
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
