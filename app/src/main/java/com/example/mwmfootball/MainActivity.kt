@@ -9,6 +9,9 @@ import com.example.mwmfootball.databinding.ActivityMainBinding
 import com.example.mwmfootball.model.PLHomeData
 import com.example.mwmfootball.viewmodel.PLHomeViewModel
 
+// OnClick trên Cardview thì lỗi crash
+// Vẫn chưa thể load ảnh trên RecyclerView trong Teams Fragment
+
 lateinit var binding : ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

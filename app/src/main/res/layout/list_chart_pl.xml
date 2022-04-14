@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlCIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvPosition">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civTeamIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/img_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlName"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlCIV"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/tvNameTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|left|start"
+                android:text="Man City"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvW"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/rlName"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvW"
+            android:gravity="center"
+            android:text="13"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvD"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvL"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvD"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

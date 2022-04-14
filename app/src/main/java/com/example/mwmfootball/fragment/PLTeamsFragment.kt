@@ -9,24 +9,17 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.mwmfootball.R
 import com.example.mwmfootball.adapter.PLTeamsRecyclerAdapter
 import com.example.mwmfootball.databinding.FragmentPLTeamsBinding
-import com.example.mwmfootball.databinding.ListTeamsPlBinding
 import com.example.mwmfootball.model.Teams.PLTeamsModel
 import com.example.mwmfootball.model.Teams.Team
-import com.example.mwmfootball.viewmodel.PLChartViewModel
-import kotlinx.android.synthetic.main.fragment_p_l_teams.*
+import com.example.mwmfootball.viewmodel.PLTeamsViewModel
 
 
 class PLTeamsFragment : Fragment() {
 
     private lateinit var plTeamsRecyclerAdapter: PLTeamsRecyclerAdapter
-//    private lateinit var rcvBinding: FragmentPLTeamsBinding
-//    private lateinit var teamsRecyclerView : RecyclerView
-//    private lateinit var lstTeams : MutableList<Team>
-//    private lateinit var adapter : PLTeamsRecyclerAdapter
+    private lateinit var rcvBinding : FragmentPLTeamsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +29,7 @@ class PLTeamsFragment : Fragment() {
     }
 
     private fun createData() {
-        val viewModel : PLChartViewModel by viewModels()
+        val viewModel : PLTeamsViewModel by viewModels()
         viewModel.getListPLTeamsObserver().observe(this, Observer<PLTeamsModel?>{
             if (it != null) {
                 plTeamsRecyclerAdapter.getlstTeams(it.teams as ArrayList<Team>)
@@ -51,6 +44,16 @@ class PLTeamsFragment : Fragment() {
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        rcvBinding.rcvPLTeams.apply {
+            layoutManager = LinearLayoutManager(context)
+            plTeamsRecyclerAdapter = PLTeamsRecyclerAdapter()
+            adapter = plTeamsRecyclerAdapter
+        }
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -68,12 +71,12 @@ class PLTeamsFragment : Fragment() {
 //        teamsRecyclerView.adapter = adapter
 //
 //        return view
-        val v = inflater.inflate(R.layout.fragment_p_l_teams, container, false)
-        rcvPLTeams.apply {
-            layoutManager = LinearLayoutManager(context)
-            plTeamsRecyclerAdapter = PLTeamsRecyclerAdapter()
-            adapter = plTeamsRecyclerAdapter
-            return v
-        }
+//        val v = inflater.inflate(R.layout.fragment_p_l_teams, container, false)
+//        rcvPLTeams.apply {
+//            layoutManager = LinearLayoutManager(context)
+//            plTeamsRecyclerAdapter = PLTeamsRecyclerAdapter()
+//            adapter = plTeamsRecyclerAdapter
+        rcvBinding = FragmentPLTeamsBinding.inflate(inflater, container, false)
+        return rcvBinding.root
     }
 }
