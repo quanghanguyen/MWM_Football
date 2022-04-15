@@ -15,7 +15,7 @@ class L1ChartRecyclerAdapter : RecyclerView.Adapter<L1ChartRecyclerAdapter.MyVie
     var lstL1Chart = ArrayList<Table>()
 
     fun getL1ListChart(l1ChartData : ArrayList<Table>) {
-        this.lstL1Chart = lstL1Chart
+        this.lstL1Chart = l1ChartData
     }
 
     class MyViewHolder(view : View) : RecyclerView.ViewHolder(view) {
