@@ -9,7 +9,7 @@ import com.example.mwmfootball.R
 import com.example.mwmfootball.databinding.ActivityMainBinding
 import com.example.mwmfootball.model.PLHomeData
 import com.example.mwmfootball.retrofit.PL.PLHome
-import com.example.mwmfootball.viewmodel.PLHomeViewModel
+import com.example.mwmfootball.viewmodel.PLViewModel.PLHomeViewModel
 
 // OnClick trên Cardview thì lỗi crash
 

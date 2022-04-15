@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tvPositionL1"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlCIVL1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvPositionL1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civTeamIconL1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/img_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlNameL1"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlCIVL1"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/tvNameTeamL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|left|start"
+                android:text="Man City"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvWL1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/rlNameL1"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvLL1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvWL1"
+            android:gravity="center"
+            android:text="13"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvDL1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvLL1"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvPL1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/tvDL1"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

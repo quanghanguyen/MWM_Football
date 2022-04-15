@@ -1,4 +1,4 @@
-package com.example.mwmfootball.activity.PL
+package com.example.mwmfootball.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -13,7 +13,7 @@ import com.example.mwmfootball.adapter.PL.PLChartRecyclerAdapter
 import com.example.mwmfootball.databinding.FragmentPLChartBinding
 import com.example.mwmfootball.model.Chart.PLChartModel
 import com.example.mwmfootball.model.Chart.Table
-import com.example.mwmfootball.viewmodel.PLChartViewModel
+import com.example.mwmfootball.viewmodel.PLViewModel.PLChartViewModel
 
 
 class PLChartFragment : Fragment() {

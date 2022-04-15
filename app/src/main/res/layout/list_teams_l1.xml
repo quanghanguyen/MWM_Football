@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/rlitemTeamsL1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civTeamsL1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:id="@+id/tvTeamsL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/civTeamsL1"
+                android:text="@string/matchday"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

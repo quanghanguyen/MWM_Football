@@ -1,4 +1,4 @@
-package com.example.mwmfootball.viewmodel
+package com.example.mwmfootball.viewmodel.PLViewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

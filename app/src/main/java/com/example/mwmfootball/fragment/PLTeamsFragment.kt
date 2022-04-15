@@ -13,7 +13,7 @@ import com.example.mwmfootball.adapter.PL.PLTeamsRecyclerAdapter
 import com.example.mwmfootball.databinding.FragmentPLTeamsBinding
 import com.example.mwmfootball.model.Teams.PLTeamsModel
 import com.example.mwmfootball.model.Teams.Team
-import com.example.mwmfootball.viewmodel.PLTeamsViewModel
+import com.example.mwmfootball.viewmodel.PLViewModel.PLTeamsViewModel
 
 
 class PLTeamsFragment : Fragment() {

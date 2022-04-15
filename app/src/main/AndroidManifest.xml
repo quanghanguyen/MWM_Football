@@ -16,7 +16,7 @@
             android:name=".activity.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.PLHome"
+            android:name=".activity.L1.L1Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

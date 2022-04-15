@@ -21,8 +21,6 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
         this.lstTeams = data
     }
 
-
-
     class MyViewHolder(val plTeamsBinding : ListTeamsPlBinding) : RecyclerView.ViewHolder(plTeamsBinding.root) {
         //private var rcvBinding = ListTeamsPlBinding.bind(plTeamsBinding)
 

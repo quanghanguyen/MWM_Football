@@ -1,4 +1,4 @@
-package com.example.mwmfootball.viewmodel
+package com.example.mwmfootball.viewmodel.PLViewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +8,6 @@ import com.example.mwmfootball.retrofit.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
 
 class PLHomeViewModel : ViewModel() {
 
