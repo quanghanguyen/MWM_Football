@@ -13,16 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MWMFootball">
         <activity
+            android:name=".activity.L1.L1Home"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.PL.PLHome"
+            android:exported="false"/>
+        <activity
             android:name=".activity.BL.BLHome"
             android:exported="false"/>
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.SA.SAHome"
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SA.SAHome"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
