@@ -61,9 +61,10 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
             dialog.show()
         }
 
-
         return viewHolder
+
     }
+
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(lstTeams[position])
