@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
     private fun loginSuccess() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
     }
 
     // Email
@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
 
         {
             //binding.emailContainer.setErrorTextColor()
-            return "!!!Minimum 8 Character Password"
+            return "!!! Minimum 8 Character Password"
         }
 
         if (!passwordText.matches(".*[A-Z].*".toRegex()))

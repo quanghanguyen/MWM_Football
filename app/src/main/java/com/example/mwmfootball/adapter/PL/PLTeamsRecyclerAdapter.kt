@@ -41,31 +41,30 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         //val inflater = LayoutInflater.from(parent.context).inflate(R.layout.list_teams_pl, parent, false)
         val plTeamsBinding = ListTeamsPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        //val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         val viewHolder : MyViewHolder = MyViewHolder(plTeamsBinding)
 
         //Dialog
         //val plItems = plTeamsBinding.rlitemTeams
 
-
-        dialog = Dialog(parent.context)
-        dialog.setContentView(R.layout.dialog_pl)
-        viewHolder.plTeamsBinding.rlitemTeams.setOnClickListener {
-
-            //val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
-            plDialog.tvNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].name
-            plDialog.tvShortNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].shortName
-            plDialog.tvTLADetails.text = lstTeams[viewHolder.absoluteAdapterPosition].tla
-            plDialog.tvAddressDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].address
-            plDialog.tvPhoneDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].phone
-            plDialog.tvWebsiteDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].website
-            plDialog.tvEmailDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].email
-            plDialog.tvFoundedDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].founded.toString()
-            plDialog.tvVenueDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].venue
-
-            dialog.show()
-        }
+//        dialog = Dialog(parent.context)
+//        dialog.setContentView(R.layout.dialog_pl)
+//        viewHolder.plTeamsBinding.rlitemTeams.setOnClickListener {
+//
+//            //val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+//
+//            plDialog.tvNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].name
+//            plDialog.tvShortNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].shortName
+//            plDialog.tvTLADetails.text = lstTeams[viewHolder.absoluteAdapterPosition].tla
+//            plDialog.tvAddressDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].address
+//            plDialog.tvPhoneDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].phone
+//            plDialog.tvWebsiteDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].website
+//            plDialog.tvEmailDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].email
+//            plDialog.tvFoundedDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].founded.toString()
+//            plDialog.tvVenueDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].venue
+//
+//            dialog.show()
+//        }
         return viewHolder
     }
 
