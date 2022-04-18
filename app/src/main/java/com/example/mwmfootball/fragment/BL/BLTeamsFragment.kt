@@ -31,6 +31,9 @@ class BLTeamsFragment : Fragment() {
             if (it != null) {
                 blTeamsRecyclerAdapter.getListBLTeams(it.teams as ArrayList<Team>)
                 blTeamsRecyclerAdapter.notifyDataSetChanged()
+
+                rcvBLTeamsBinding.pbBLTeams.visibility = View.GONE
+                rcvBLTeamsBinding.rcvBLTeams.visibility = View.VISIBLE
             } else {
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
             }

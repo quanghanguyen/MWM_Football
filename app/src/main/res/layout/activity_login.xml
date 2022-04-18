@@ -47,7 +47,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/Widget.Cream.TextInputLayout.OutlineBox"
             app:helperText="@string/helperText"
-            app:helperTextTextColor="@color/black"
+            app:helperTextTextColor="@android:color/holo_red_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.15">
 
@@ -75,7 +75,7 @@
             app:passwordToggleEnabled="true"
             style="@style/Widget.Cream.TextInputLayout.OutlineBox"
             app:helperText="@string/helperText"
-            app:helperTextTextColor="@color/black"
+            app:helperTextTextColor="@android:color/holo_red_light"
             app:counterEnabled="true"
             app:counterMaxLength="16"
             >

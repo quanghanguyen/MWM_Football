@@ -33,6 +33,10 @@ class BLChartFragment : Fragment() {
                 val blChartInfo = it.standings
                 blRecyclerAdapter.getBLListChart(blChartInfo[0].table as ArrayList<Table>)
                 blRecyclerAdapter.notifyDataSetChanged()
+
+                rcvBLBinding.pbBLChart.visibility = View.GONE
+                rcvBLBinding.rcvBLChart.visibility = View.VISIBLE
+
             } else {
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
             }

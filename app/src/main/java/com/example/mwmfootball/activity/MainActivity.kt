@@ -3,6 +3,7 @@ package com.example.mwmfootball.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.example.mwmfootball.R
@@ -84,6 +85,7 @@ class MainActivity : AppCompatActivity() {
                 binding.tvmatchDay2.text = it.currentSeason.currentMatchday.toString()
             }
         })
+
         blHomeViewModel.makeBLHomeDataCall()
     }
 
@@ -124,9 +126,18 @@ class MainActivity : AppCompatActivity() {
                 binding.tvendDate.text = it.currentSeason.endDate
                 binding.tvmatchDay.text = it.currentSeason.currentMatchday.toString()
 
+                binding.progressBar.visibility = View.GONE
+                binding.tvHome.visibility = View.VISIBLE
+                binding.cvPL.visibility = View.VISIBLE
+                binding.cvL1.visibility = View.VISIBLE
+                binding.cvBL.visibility = View.VISIBLE
+                binding.cvSA.visibility = View.VISIBLE
+
             }
         })
         plHomeViewModel.plHomeDataAPICall()
+
+
     }
 
 }

@@ -9,28 +9,32 @@
     android:background="@color/grey"
     android:padding="10dp">
 
-<!--    <ProgressBar-->
-<!--        android:id="@+id/progressBar"-->
-<!--        android:layout_width="50dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_centerInParent="true" />-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/pb_bg"
+        />
 
     <!--    android:visibility="gone"-->
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:text="@string/home"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/black"/>
+        android:layout_marginTop="10dp"
+        android:text="@string/home"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
 
     <!--    android:visibility="gone"-->
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cvPL"
         android:layout_below="@+id/tvHome"
         android:layout_width="match_parent"
@@ -170,6 +174,7 @@
     <!--    android:visibility="gone"-->
 
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cvL1"
         android:layout_below="@+id/cvPL"
         android:layout_width="match_parent"
@@ -308,6 +313,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cvBL"
         android:layout_below="@+id/cvL1"
         android:layout_width="match_parent"
@@ -447,6 +453,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cvSA"
         android:layout_below="@+id/cvBL"
         android:layout_width="match_parent"

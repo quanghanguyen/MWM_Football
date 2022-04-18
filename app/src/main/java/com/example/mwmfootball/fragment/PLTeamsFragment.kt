@@ -34,6 +34,9 @@ class PLTeamsFragment : Fragment() {
             if (it != null) {
                 plTeamsRecyclerAdapter.getlstTeams(it.teams as ArrayList<Team>)
                 plTeamsRecyclerAdapter.notifyDataSetChanged()
+
+                rcvBinding.pbPL.visibility = View.GONE
+                rcvBinding.rcvPLTeams.visibility = View.VISIBLE
             } else {
                 //Toast.makeText(this@PLTeamsFragment, "Error", Toast.LENGTH_SHORT).show()
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()

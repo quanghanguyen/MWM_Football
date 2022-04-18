@@ -2,7 +2,9 @@ package com.example.mwmfootball.adapter.PL
 
 import android.app.Dialog
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mwmfootball.R
@@ -10,7 +12,7 @@ import com.example.mwmfootball.databinding.DialogPlBinding
 import com.example.mwmfootball.databinding.ListTeamsPlBinding
 import com.example.mwmfootball.model.Teams.Team
 
-// lateinit var plDialog : DialogPlBinding
+//private lateinit var plDialog : DialogPlBinding
 
 class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyViewHolder>() {
 
@@ -20,6 +22,7 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
     fun getlstTeams(data : ArrayList<Team>) {
         this.lstTeams = data
     }
+
 
     class MyViewHolder(val plTeamsBinding : ListTeamsPlBinding) : RecyclerView.ViewHolder(plTeamsBinding.root) {
         //private var rcvBinding = ListTeamsPlBinding.bind(plTeamsBinding)
@@ -40,6 +43,7 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
         val plTeamsBinding = ListTeamsPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         val viewHolder : MyViewHolder = MyViewHolder(plTeamsBinding)
+
         //Dialog
         //val plItems = plTeamsBinding.rlitemTeams
 
@@ -47,6 +51,8 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
         dialog = Dialog(parent.context)
         dialog.setContentView(R.layout.dialog_pl)
         viewHolder.plTeamsBinding.rlitemTeams.setOnClickListener {
+
+            //val plDialog = DialogPlBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
             plDialog.tvNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].name
             plDialog.tvShortNameDetails.text = lstTeams[viewHolder.absoluteAdapterPosition].shortName
@@ -60,11 +66,8 @@ class PLTeamsRecyclerAdapter : RecyclerView.Adapter<PLTeamsRecyclerAdapter.MyVie
 
             dialog.show()
         }
-
         return viewHolder
-
     }
-
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(lstTeams[position])

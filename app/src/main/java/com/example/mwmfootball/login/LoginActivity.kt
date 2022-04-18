@@ -84,25 +84,25 @@ class LoginActivity : AppCompatActivity() {
 
         {
             //binding.emailContainer.setErrorTextColor()
-            return "Minimum 8 Character Password"
+            return "!!!Minimum 8 Character Password"
         }
 
         if (!passwordText.matches(".*[A-Z].*".toRegex()))
 
         {
-            return "Must contain 1 Upper-case Character"
+            return "!!! Must contain 1 Upper-case Character"
         }
 
         if (!passwordText.matches(".*[a-z].*".toRegex()))
 
         {
-            return "Must contain 1 Lower-case Character"
+            return "!!! Must contain 1 Lower-case Character"
         }
 
         if (!passwordText.matches(".*[@#\$%^&+=].*".toRegex()))
 
         {
-            return "Must contain 1 Special Character (@#\$%^&+=)"
+            return "!!! Must contain 1 Special Character (@#\$%^&+=)"
         }
 
         return null

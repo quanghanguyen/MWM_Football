@@ -29,6 +29,9 @@ class L1TeamsFragment : Fragment() {
             if (it != null) {
                 l1TeamsRecyclerAdapter.getlstL1Teams(it.teams as ArrayList<Team>)
                 l1TeamsRecyclerAdapter.notifyDataSetChanged()
+
+                rcvL1Binding.pbL1Teams.visibility = View.GONE
+                rcvL1Binding.rcvL1Teams.visibility = View.VISIBLE
             } else {
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
             }

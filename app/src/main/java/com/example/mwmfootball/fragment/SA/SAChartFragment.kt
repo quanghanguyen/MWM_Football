@@ -30,6 +30,9 @@ class SAChartFragment : Fragment() {
                 val saChartInfo = it.standings
                 saChartRecyclerAdapter.getListSAChart(saChartInfo[0].table as ArrayList<Table>)
                 saChartRecyclerAdapter.notifyDataSetChanged()
+
+                saChartBinding.pbSATeams.visibility = View.GONE
+                saChartBinding.rcvSATeams.visibility = View.VISIBLE
             }
         })
 

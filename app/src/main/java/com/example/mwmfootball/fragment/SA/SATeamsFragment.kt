@@ -28,6 +28,9 @@ class SATeamsFragment : Fragment() {
             if (it != null) {
                 saTeamsRecyclerAdapter.getlstSATeams(it.teams as ArrayList<Team>)
                 saTeamsRecyclerAdapter.notifyDataSetChanged()
+
+                rcvSATeamsBinding.pbSATeams.visibility = View.GONE
+                rcvSATeamsBinding.rcvSATeams.visibility = View.VISIBLE
             }
         })
 

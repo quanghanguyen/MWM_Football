@@ -35,6 +35,9 @@ class PLChartFragment : Fragment() {
                 val chartInfo = it.standings
                 plChartRecyclerAdapter.getlstChart(chartInfo[0].table as ArrayList<Table>)
                 plChartRecyclerAdapter.notifyDataSetChanged()
+
+                plchartBinding.pbPLChart.visibility = View.GONE
+                plchartBinding.rcvPLChart.visibility = View.VISIBLE
             } else {
                 Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
             }
